@@ -1,0 +1,51 @@
+================================================================================
+        Machine learning on a database of 1400 ternary sulfides
+                 --- README / Introduction ----
+                Dr. Sandip Bhattacharya, December - 2017
+================================================================================
+
+MOTIVATION- In the present project, machine learning models will be implemented using Python (sklearn and pandas) 
+a) to have a better understanding of the factors which result in HHs with good transport properties
+b) with this understanding machine learning models could design novel futuristic half-Heusler materials.
+
+***
+Q- What are TE materials and why are they important?
+A- TE materials produce an electrical potential difference as a result of a temperature bias across them, due to the Seebeck effect. The temperature bias can be generated from the large quantities of waste heat generated in automobiles, in industries and homes. Energy generated from TE materials is therefore renewable. My research goal is to discover novel TE materials that are non-toxic and cheap.
+
+Q-Why are computational big data and machine learning techniques crucial to design new materials?
+A-When the objective is to discover novel technologically relevant materials, one needs these methods due to the large datasets investigated. In material science this means that there is a large phase space to be explored and which cannot be done experimentally.
+I have lead several such big data projects that have identified novel materials for TE applications, summarized in my following publications and patents:
+
+a)Ternary sulfides: 
+  Journal of Materials Chemistry C 4 (15), 3094-3100 (2016)
+  Journal of Materials Chemistry A 4 (28), 11086-11093 (2016)
+  WO Patent WO2017013348: Novel compound CoSbS identified through big data techniques
+b)HHs: 
+  Journal of Materials Chemistry, 4, 11261-11268, (201)6
+***
+
+MACHINE LEARNING DETAILS- The code is demonstrated for Random Forest regression, Neural Networks as well as Support Vector Machines (SVM). It is focused on p-type thermoelectrics but can be extended also to n-type and any compound classes.
+
+DATA SETS (INPUT)- Database containing first principles electronic structure and transport information on 1400 ternary sulfides is the input. The database was generated in my previous works.
+The main inputs are: 
+-zT (label)
+-bandgap 
+the following information on the valence electrons of the constituent atoms (from all electron DFT calculations):
+-eigen values
+-kinetic energy
+-cutoff radius
+
+================================================================================
+                     CONTENT OF THE PROJECTS FOLDER:
+================================================================================
+README
+ML_code.py (main Python ML code)
+correlation.pdf (correlations between the ML and actual datasets)
+graph.pdf (output: ML feature importances for electronic properties)
+
+================================================================================
+                     FURTHER INFO:
+================================================================================
+Please contact me at sbhattac@tcd.ie for any further information.
+Additionally, you may be interested in my other machine learning projects on half-Heuslers.
+(also available on GitHub)
